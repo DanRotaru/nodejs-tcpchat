@@ -1,35 +1,35 @@
 # Node.js TCP Chat
-## Obiective
+## Objectives
 
-1. A înțelege cum se crează un socket ✅
-2. A înțelege cum TCP server începe a asculta conexiuni pe un port ✅
-3. A înțelege cum se primesc datele prin socket ✅
-4. A înțelege cum se transmit datele prin socket ✅
-5. A înțelege cum se pot prelucra mai mulți clienți concomitent ✅
-6. A întelege cum se poate închide conexiunea corect precum din partea client atât și din partea server ✅
+1. Understand how to create a socket ✅
+2. Understand how the TCP server starts listening to connections on a port ✅
+3. Understand how data is received via socket ✅
+4. Understand how data is transmitted through socket ✅
+5. Understand how to process multiple customers at once ✅
+6. Understand how to close the connection correctly both from the client and from the server ✅
 
-## Descriere
-Este nevoie de a crea doua aplicații de consolă.
-Una din ele va servi ca un server de rețea, iar altă va servi ca un client care se va conecta la prima.
-Aplicație client va cere de la utilizator să introducă un text de la tastiera și îl va trimite către server.
-Aplicația server va afișa acest mesaj în fereastra sa,
-iar apoi îl va retransmite la toți clienți conectați (inclusiv și la cel care a trimis mesajul inițial).
-Clienții vor putea să transmită cîte mesaje vor.
+## Description
+You need to create two console applications.
+One of them will serve as a network server, and the other will serve as a client that will connect to the first one.
+The client application will prompt the user to enter text from the keyboard and send it to the server.
+The server application will display this message in its window,
+and then forward it to all connected customers (including the one who sent the original message).
+Customers will be able to send as many messages as they want.
 
 
-## Etapele rulării programului
+## Program run steps
 
-### Instalarea dependețelor
+### Installing dependencies
 ```javascript
 npm i
 ```
 
-### Pornim serverul
+### Start server
 ```javascript
 node server
 ```
 
-### Conectăm un client
+### Connect a new client
 ```javascript
-node client
+node
 ```
